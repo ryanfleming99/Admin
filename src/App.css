@@ -6,11 +6,23 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(107, 189, 236);
+  background-color: grey /* rgb(107, 189, 236); */;
   position: relative;
   top: -50px;
 }
 
 .spacing {
   margin-top: 100px;
+}
+
+.header {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fdfdfd;
+  font-weight: 800;
+  margin: 30px 0;
+  background: #2faece;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
 }

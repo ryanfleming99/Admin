@@ -7,7 +7,7 @@ const StyledButton = styled.button`
   padding: 15px;
   border: 1px solid white;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 5px;
   width: 200px;
   height: 20px;
   justify-content: center;

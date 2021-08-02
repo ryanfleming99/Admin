@@ -4,7 +4,8 @@ const TaskSpacing = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: grey;
+  color: white;
+  padding: 10px;
 `;
 
 export default TaskSpacing;

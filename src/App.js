@@ -81,12 +81,13 @@ function App() {
   return (
     <>
       <StyledLayout>
-        <div class="spacing"></div>
-        <TaskList tasks={tasks} toggleTask={toggleTask} />
+        <div className="header">Checkbox</div>
         <InputBox ref={taskNameRef} type="text" />
-        <StyledButton onClick={addNewTask}>+</StyledButton>
+        <StyledButton onClick={addNewTask}>Add +</StyledButton>
         <StyledButton onClick={handleClearTasks}> Clear Completed</StyledButton>
         <TaskCounter tasks={tasks}></TaskCounter>
+        <br></br>
+        <TaskList tasks={tasks} toggleTask={toggleTask} />
       </StyledLayout>
     </>
   );

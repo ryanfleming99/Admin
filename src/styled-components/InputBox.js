@@ -6,7 +6,7 @@ const InputBox = styled.input`
   text-align: center;
   padding: 5px;
   border: 1px solid lightgray;
-  border-radius: 20px;
+  border-radius: 5px;
   width: 190px;
   height: 20px;
   justify-content: center;
