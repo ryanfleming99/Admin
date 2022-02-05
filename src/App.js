@@ -9,9 +9,21 @@ import StyledButton from "./styled-components/StyledButton";
 import InputBox from "./styled-components/InputBox";
 import TaskCounter from "./styled-components/TaskCounter";
 import Counter from "./styled-components/Counter";
-
+import Header from "./Header";
+import TaskContainer from "./styled-components/TaskContainer"
 import { v4 as uuidv4 } from "uuid";
 import StyledTask from "./styled-components/StyledTask";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+// This site has 3 pages, all of which are rendered
+// dynamically in the browser (not server rendered).
+//
+// Although the page does not ever refresh, notice how
+// React Router keeps the URL up to date as you navigate
+// through the site. This preserves the browser history,
+// making sure things like the back button and bookmarks
+// work properly.
+
 // uuid is used to generate random ID's for tasks, used as a function within the prevTasks object
 // using 'import uuidv4 from 'uuid/v4' gave an ERROR so I found a fix (use v4 as uuidv4 instead)
 // 'styled-components' is a create-a-component library which allows powerful css styling
@@ -81,18 +93,20 @@ function App() {
   return (
     <>
       <StyledLayout>
-        <div className="header">Checkbox</div>
+      <TaskContainer>
+        <TaskList tasks={tasks} toggleTask={toggleTask} />
+        </TaskContainer>
+        <br></br>
         <InputBox ref={taskNameRef} type="text" />
         <StyledButton onClick={addNewTask}>Add +</StyledButton>
         <StyledButton onClick={handleClearTasks}> Clear Completed</StyledButton>
         <TaskCounter tasks={tasks}></TaskCounter>
-        <br></br>
-        <TaskList tasks={tasks} toggleTask={toggleTask} />
       </StyledLayout>
     </>
   );
 }
 
+//<Header /> 
 // <> </>  fragement used for mutli-line html
 // todos={todos} passes your todos (tasks) to the component so it can be used, its called props.
 // for todos you create a component (Todo.js)

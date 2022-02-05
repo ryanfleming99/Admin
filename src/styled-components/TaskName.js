@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const TaskName = styled.span`
-  width: 50%;
-  vertical-align: middle;
-  padding: 10px;
+      font-size: 30px !important;
+    padding: 20px;
+    color: white;
+    font-weight: 900;
 `;
 
 export default TaskName;

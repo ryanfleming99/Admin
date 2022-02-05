@@ -1,6 +1,7 @@
 import React from "react";
 import TaskSpacing from "./styled-components/TaskSpacing";
 import CheckBox from "./styled-components/CheckBox";
+import TaskName from "./styled-components/TaskName"
 
 /* const StyledTask = styled.div`
 `; */
@@ -15,7 +16,7 @@ export default function TaskList({ task, toggleTask }) {
   return (
     <>
       <TaskSpacing>
-        {task.name}
+      <TaskName>{task.name}</TaskName>
         <CheckBox
           type="checkbox"
           checked={task.complete}
