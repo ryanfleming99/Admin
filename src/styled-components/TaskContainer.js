@@ -13,6 +13,7 @@ const TaskContainer = styled.div`
   border-radius:10px;
   width:80%;
   height:auto;
+  vertical-align:middle;
 
 `;
 export default TaskContainer;
