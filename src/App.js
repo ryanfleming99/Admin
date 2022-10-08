@@ -86,7 +86,6 @@ function App() {
         <StyledButton onClick={addNewTask}>Add +</StyledButton>
         <StyledButton onClick={handleClearTasks}> Clear Completed</StyledButton>
         <TaskCounter tasks={tasks}></TaskCounter>
-        <br></br>
         <TaskList tasks={tasks} toggleTask={toggleTask} />
       </StyledLayout>
     </>

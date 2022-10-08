@@ -6,7 +6,9 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: grey /* rgb(107, 189, 236); */;
+  background-color: grey
+    /* rgb(107, 189, 236); */
+  ;
   position: relative;
   top: -50px;
 }
